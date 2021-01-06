@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/bootstrap";
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #000;
+}
+
+.header {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 3rem;
+}
+
+.header-link {
+  float: left;
+  margin-top: 7px;
+}

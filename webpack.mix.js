@@ -21,9 +21,22 @@ mix.browserSync({
 
   }
 });
+
+const assets = 'src/styles'
+const outputAssets = 'dist/css'
+
+const fs = require('fs')
+
+fs.readdirSync(assets).reduce((acc, file) => {
+  const route = `${assets}/${file}`
+  const nameWithoutType = file.substr(0, file.lastIndexOf('.scss'))
+  const output = `${outputAssets}/${nameWithoutType}.min.css`
+  return acc.sass(route, output)
+}, mix)
+
 mix.options({
   processCssUrls: false
-}).sass('src/styles/index.scss', 'dist/css/index.min.css')
+})
   .copyDirectory('src/images', 'dist/images')
   .js('src/js/main.js', 'dist/main.min.js')
   .copy('src/html', 'dist');
