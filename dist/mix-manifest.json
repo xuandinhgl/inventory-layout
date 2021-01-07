@@ -1,1 +1,10 @@
-{}
+{
+    "/main.min.js": "/main.min.js",
+    "/css/common.min.css": "/css/common.min.css",
+    "/css/index.min.css": "/css/index.min.css",
+    "/css/page-2.min.css": "/css/page-2.min.css",
+    "/css/page-3.min.css": "/css/page-3.min.css",
+    "/css/page-4.min.css": "/css/page-4.min.css",
+    "/css/page-5.min.css": "/css/page-5.min.css",
+    "/css/page-6.min.css": "/css/page-6.min.css"
+}

@@ -18,3 +18,103 @@ a {
   float: left;
   margin-top: 7px;
 }
+
+.form__row {
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.form__wrap {
+  width: 350px;
+}
+
+.form__label {
+  width: 80px;
+  cursor: pointer;
+  margin-bottom: 0;
+  font-weight: bold;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.form__input {
+  flex: 1 1 0;
+}
+
+.form__checkbox {
+  cursor: pointer;
+  display: block;
+  width: 30px;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.il-btn {
+  min-width: 150px;
+}
+
+//Data table
+
+.data-wrap {
+  min-width: 1800px;
+  margin-bottom: 30px;
+}
+
+.data-table {
+  font-size: 13px;
+
+  th {
+    vertical-align: middle !important;
+    text-align: center;
+  }
+
+  th, td {
+    border: 1px solid #000 !important;
+    text-align: center;
+    padding: 5px !important;
+
+    &.bdl-2 {
+      border-left-width: 2px!important;
+    }
+  }
+
+  thead {
+    th {
+      background: #c4e1b4;
+    }
+  }
+
+  tbody {
+    td {
+      vertical-align: bottom !important;
+    }
+  }
+
+  .w100 {
+    width: 100px;
+  }
+}
+
+.bg--yellow {
+  background: #ffff00 !important;
+}
+
+.bg--brown {
+  background: #f0b385 !important;
+}
+
+.bg--brown-light {
+  background: #f9e5d6 !important;
+}
+
+.table__input {
+  max-width: 100px;
+  border: none;
+  padding: 0;
+  height: auto;
+}

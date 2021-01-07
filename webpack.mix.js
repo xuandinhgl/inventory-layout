@@ -28,10 +28,12 @@ const outputAssets = 'dist/css'
 const fs = require('fs')
 
 fs.readdirSync(assets).reduce((acc, file) => {
-  const route = `${assets}/${file}`
-  const nameWithoutType = file.substr(0, file.lastIndexOf('.scss'))
-  const output = `${outputAssets}/${nameWithoutType}.min.css`
-  return acc.sass(route, output)
+  if (!fs.lstatSync(assets + '/' +file).isDirectory()) {
+    const route = `${assets}/${file}`
+    const nameWithoutType = file.substr(0, file.lastIndexOf('.scss'))
+    const output = `${outputAssets}/${nameWithoutType}.min.css`
+    return acc.sass(route, output)
+  }
 }, mix)
 
 mix.options({
